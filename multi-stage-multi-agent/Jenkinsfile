@@ -22,7 +22,7 @@ pipeline {
         docker { image 'bash:devel-alpine3.19' }
       }
       steps {
-        sh "echo 'Hello Manoj"
+        sh "echo 'Hello Manoj'"
       }
     }
   }
