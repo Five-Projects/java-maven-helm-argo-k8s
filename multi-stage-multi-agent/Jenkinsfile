@@ -17,5 +17,13 @@ pipeline {
         sh 'node --version'
       }
     }
+    stage('New stage') {
+      agent {
+        docker { image 'devel-alpine3.19' }
+      }
+      steps {
+        sh "echo 'Hello Manoj"
+      }
+    }
   }
 }
