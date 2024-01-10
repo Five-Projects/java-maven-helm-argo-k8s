@@ -19,7 +19,7 @@ pipeline {
     }
     stage('New stage') {
       agent {
-        docker { image 'devel-20240102-alpine3.19' }
+        docker { image 'devel-alpine3.19' }
       }
       steps {
         sh "echo 'Hello Manoj"
